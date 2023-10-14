@@ -1,0 +1,16 @@
+<form>
+    <input type="text" placeholder="Nome" [(ngModel)]="produto.nome" name="nome" class="form-control">
+    <input type="number" placeholder="Valor" [(ngModel)]="produto.valor" name="valor" class="form-control">
+    <input type="button" value="Cadastrar" class="btn btn-primary" (click)="cadastrarProduto()">
+</form>
+
+<table class="table table-striped">
+    <tbody>
+        <tr *ngFor="let v of vetor">
+            <td>{{v.id}}</td>
+            <td>{{v.nome}}</td>
+            <td>{{v.valor}}</td>
+        </tr>
+    </tbody>
+
+</table>

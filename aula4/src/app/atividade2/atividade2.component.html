@@ -1,0 +1,10 @@
+<form>
+    <input type="text"  [(ngModel)]="cep" name="cep">
+    <input type="button" value="Verificar" (click)="verificar()">
+</form>
+
+<p>Estado: {{endereco.uf}}</p>
+<p>Cidade: {{endereco.localidade}}</p>
+<p>Bairro: {{endereco.bairro}}</p>
+<p>Logradouro: {{endereco.logradouro}}</p>
+<p>Complemento: {{endereco.complemento}}</p>

@@ -1,0 +1,13 @@
+<form>
+    <img src="assets/alienigina.webp">
+
+    <input type="number" placeholder="numero" [(ngModel)]="numero" name="numero" class="form-control">
+
+    <input type="button" value="verificar" class="btn btn-primary" (click)="calculoTabuada()">
+</form>
+
+<table class="btn btn-secondary">
+    <tr *ngFor="let v of vetor">
+        <td>{{v}}</td>
+    </tr>
+</table>

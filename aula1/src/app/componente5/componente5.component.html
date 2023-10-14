@@ -1,0 +1,24 @@
+<form (submit)="cadastrar()">
+    <input type="text" name="nome" [(ngModel)]="p.nome">
+    <input type="text" name="idade" [(ngModel)]="p.idade">
+    <input type="submit" value="Cadastrar">
+</form>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let v of vetor; index as indice">
+            <td>{{indice + 1}}</td>
+            <td>{{v.nome}}</td>
+            <td>{{v.idade}}</td>
+        </tr>
+    </tbody>
+</table>

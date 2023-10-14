@@ -1,0 +1,12 @@
+<form>
+    <img src="assets/alienigina.webp">
+
+    <input type="number" placeholder="numero" [(ngModel)]="numero" name="numero" class="form-control">
+    <select class="form-control" [(ngModel)]="option" name="option">
+        <option value="dolar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="libra">Libra</option>
+        <option value="peso">Peso Argentino</option>
+    </select>
+    <input type="button" value="verificar" class="btn btn-primary" (click)="converterMoeda()">
+</form>

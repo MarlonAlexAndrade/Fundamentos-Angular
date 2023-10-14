@@ -1,0 +1,13 @@
+<form>
+    <img src="assets/alienigina.webp">
+
+    <input type="number" placeholder="numero" [(ngModel)]="numero" name="numero" class="form-control">
+    <select class="form-control" [(ngModel)]="option" name="option">
+        <option value="vista">Pagamento a Vista</option>
+        <option value="prazo">Pagamento a Prazo</option>
+    </select>
+    <input type="button" value="verificar" class="btn btn-primary" (click)="calcularParcela()">
+</form>
+
+
+<h1>{{numero}}</h1>

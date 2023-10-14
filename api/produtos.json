@@ -1,0 +1,14 @@
+{
+  "produtos": [
+    {
+      "nome": "Tv 32 polegadas",
+      "valor": 2600,
+      "id": 1
+    },
+    {
+      "nome": "Monitor",
+      "valor": 5000,
+      "id": 3
+    }
+  ]
+}

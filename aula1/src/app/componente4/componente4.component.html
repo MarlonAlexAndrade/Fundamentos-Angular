@@ -1,0 +1,15 @@
+<form (submit)="cadastrar()">
+    <input type="text" placeholder="Nome" name="nome" [(ngModel)]="nome">
+    <input type="number" placeholder="Idade" name="idade" [(ngModel)]="idade">
+    <input type="submit" value="Cadastrar">
+</form>
+
+<h1>Nomes</h1>
+<ul *ngFor="let n of vetorNome">
+     <li>{{n}}</li>
+</ul>
+
+<h1>Idade</h1>
+<ul *ngFor="let i of vetorIdade">
+    <li>{{i}}</li>
+</ul>

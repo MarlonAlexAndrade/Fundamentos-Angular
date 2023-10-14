@@ -1,0 +1,19 @@
+<form>
+    <input type="text" placeholder="Nome" [(ngModel)]="aluno.nome" name="nome" class="form-control">
+    <input type="number" placeholder="nota1" [(ngModel)]="aluno.nota1" name="nota1" class="form-control">
+    <input type="number" placeholder="nota2" [(ngModel)]="aluno.nota2" name="nota2" class="form-control">
+    <input type="button" value="Cadastrar" class="btn btn-primary" (click)="cadastrarAluno()">
+</form>
+
+
+<table class="table table-striped">
+    <tbody>
+        <tr *ngFor="let v of vetor">          
+            <td>{{v.nome}}</td>
+            <td>{{v.nota1}}</td>
+            <td>{{v.nota2}}</td>
+            <td>{{v | media}}</td>
+        </tr>
+    </tbody>
+
+</table>

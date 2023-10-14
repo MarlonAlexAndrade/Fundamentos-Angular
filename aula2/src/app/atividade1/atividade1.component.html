@@ -1,0 +1,10 @@
+<form>
+    <img src="assets/nave.webp">
+
+    <input type="number" placeholder="numero1" name="numero1" [(ngModel)]="numero1" class="form-control">
+    <input type="number" placeholder="numero2" name="numero2" [(ngModel)]="numero2" class="form-control">
+    <input type="number" placeholder="numero3" name="numero3" [(ngModel)]="numero3" class="form-control">
+    <input type="button" value="verificar" class="btn btn-primary" (click)="menorNumero()">
+</form>
+
+<h1>{{menor}}</h1>
